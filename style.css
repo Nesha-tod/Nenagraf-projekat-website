@@ -1,0 +1,399 @@
+/* STILIZACIJA GLOBALNOG HEADERA */
+
+/* Google Font Import */
+
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+ /* Body Style */
+
+ body {
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f5f2ec;
+    }
+
+    /* Header */
+
+     header {        
+        background-color: #1f203dff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    /* Zaglavlje */
+
+    .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+        padding: 5px 105px 5px 0;
+    }
+
+    /* Logotip */
+
+     .logo img {
+        height: 60px;    
+        display: block;
+    }
+
+    /* Brend Firme */
+
+    .naziv_firme {
+        text-align: center;
+        color: white;
+    }
+
+    .naziv_firme h1 {
+        margin: 0;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .naziv_firme p {
+        margin: 0;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+    }
+
+    /* Navigacija */
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        background-color: #006680;
+        padding: 8px 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    nav ul li {
+        margin: 0 25px;
+        font-size: 18px;
+    }
+
+    nav ul li a:hover {
+        color: yellow
+    }
+
+    nav ul li a:active {
+        opacity: 0.6;
+        text-decoration: underline;
+        color: white;
+        
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        opacity: 0.7;
+        transition: opacity 0.3s;
+    }
+
+    nav ul li a.current {
+         opacity: 1.0;
+         text-decoration: underline;
+         font-weight: bold;
+    }
+
+    .hamburger {
+        display: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: white;
+    }
+
+    /* Responsive Design */
+
+     @media (max-width: 768px) {
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 5px;
+        }
+        .brand {
+            padding: 0;
+        }
+        .naziv_firme h1 {
+            font-size: 25px;
+        }
+        .naziv_firme p {
+            font-size: 13px;
+        }
+        nav ul {
+            display: none;
+            flex-direction: column;
+            background-color: #1f203dff;
+            position: absolute;
+            top: 80px;
+            right: 0;
+            width: 200px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: all 0.5s ease-in-out;
+            
+        }
+        nav ul.active {
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 10px 0;
+            text-align: right;
+            margin-right: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #fff;
+            
+        }
+
+        nav ul li a:active {
+            opacity: 0.6;
+        }
+
+      
+        .hamburger {
+            display: block;
+        }
+    }
+
+    /* POCETNA */
+    /* Stilizacija Hero Sekcije */
+    
+    .hero-slider {
+        position: relative;
+        height: 400px;
+        width: 100%;
+        overflow: hidden;
+        background: white;
+    }
+
+    .slider {
+        height: 100%;
+        width: 100%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        background-image: var(--image-url);
+        animation: slider 20s ease 0s infinite;
+        background-color: #fff;
+    }
+
+    #slide1 { --image-url: url('slike/slika1_set-sushi-kutija.png'); animation-delay: 0s; }
+    #slide2 { --image-url: url('slike/slika2_kutija_burger_ventilacija.png'); animation-delay: 5s; } /* Pojavljuje se posle 5 sekundi */
+    #slide3 { --image-url: url('slike/slika3_kutija_tvrda_lepenka.jpg'); animation-delay: 10s; }
+    #slide4 { --image-url: url('slike/slika4_kutije_dostava.png'); animation-delay: 15s; }
+
+    .overlay-text {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+    .overlay-text h2 {
+        font-size: 30px;
+        margin: 0 20px;
+        text-align: center;
+    }
+
+    .overlay-text h3 {
+        font-size: 20px;
+        margin: 10px 20px 0 20px;
+        text-align: center;
+        font-weight: normal;
+    }
+
+@keyframes slider {
+    0% { opacity: 0; }
+    5% { opacity: 1; } /* Pojavljuje se */
+    25% { opacity: 1; } /* Ostaje vidljiva */
+    30% { opacity: 0; } /* Nestaje */
+    100% { opacity: 0; }
+}
+
+.CTA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cta-product {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #006680;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-product:hover {
+    background-color: #004d59;
+}
+.cta-product:active {
+    background-color: #00333a;
+}
+.cta-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e65c00;
+}
+.cta-button:active {
+    background-color: #cc5200;
+}
+
+.cta-price {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.cta-price:hover {
+    background-color: #218838;
+}
+.cta-price:active {
+    background-color: #1e7e34;
+}
+
+html { scroll-behavior: smooth; }
+
+.blok {
+    width: 100%;
+    height: 40px;
+    background-color: #006680;
+}
+
+/* Stilizacija Sekcije Uvod */
+
+.o-nama {
+    padding: 20px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    max-width: 100%;
+    border-radius: 10px;
+    border:rgba(0, 0, 0, 0.1) solid 1px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+}
+
+.cta-saznaj-vise {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #006680;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-saznaj-vise:hover {
+    background-color: #004d59;
+}
+.cta-saznaj-vise:active {
+    background-color: #00333a;
+}
+
+/* Stilizacija Sekcije Usluge */
+
+/* Usluge sekcija: 2 po redu (2 iznad, 2 ispod) */
+
+.usluge h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.usluga {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* two columns */
+    grid-auto-rows: auto;
+    gap: 24px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.grid-item {
+    background: #fff;
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.usluga img {
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    object-fit: cover;
+}
+
+.cta-detaljnije {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 20px;
+    background-color: #006680;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.cta-detaljnije:hover {
+    background-color: #004d59;
+}
+.cta-detaljnije:active {
+    background-color: #00333a;
+}
+
+@media (max-width: 768px) {
+    .usluga {
+        grid-template-columns: 1fr; /* single column on small screens */
+        gap: 12px;
+        padding: 0 12px;
+        width: 100%;
+    }
+}
+
