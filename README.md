@@ -19,7 +19,7 @@ A responsive web development project which serves as a refined and improved vers
 *   ## Live Demo
 
 You can view the live, hosted version of this website here:
-[**http://www.timbox-nenagraf.rs**](http://www.timbox-nenagraf.rs)
+[**https://www.timbox-nenagraf.rs**](https://www.timbox-nenagraf.rs)
 
 ## Installation
 
