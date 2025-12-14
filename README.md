@@ -11,7 +11,7 @@ A responsive web development project which serves as a refined and improved vers
 *   ## Technologies Used
 
 *   HTML5
-*   CSS3 & SASS/SCSS (ako ste koristili)
+*   CSS3
 *   JavaScript (Vanilla JS fundamentals)
 *   PHP (Fundamentals, including database interaction)
 *   MySQL/MariaDB
