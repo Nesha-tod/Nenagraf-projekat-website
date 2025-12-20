@@ -72,5 +72,51 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 	});
 });
 
+// ABOUT SECTION SLIDESHOW
+
+ document.querySelectorAll('.slideshow').forEach(slideshow => {
+        const images = slideshow.querySelectorAll('img');
+        const prev = slideshow.querySelector('.left');
+        const next = slideshow.querySelector('.right');
+        let index = 0;
+        let autoPlay;
+        let pauseTimeout;
+
+        function showSlide(i) {
+            images.forEach(img => img.classList.remove('active'));
+            images[i].classList.add('active');
+        }
+
+        function startAutoPlay() {
+            autoPlay = setInterval(() => {
+                index = (index + 1) % images.length;
+
+                showSlide(index);
+            }, 2000);
+        }
+
+        function stopAutoPlay() {
+            clearInterval(autoPlay);
+            clearTimeout(pauseTimeout);
+            pauseTimeout = setTimeout
+            (startAutoPlay, 3000);
+        }
+
+        prev.addEventListener('click', () => {
+            index = (index - 1 + images.length) % images.length;
+            showSlide(index);
+            stopAutoPlay();
+        });
+
+        next.addEventListener('click', () => {
+            index = (index + 1) % images.length;
+            showSlide(index);
+            stopAutoPlay();
+        });
+
+        startAutoPlay();
+
+    });
+
 
 
