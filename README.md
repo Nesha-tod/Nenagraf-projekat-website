@@ -1,29 +1,24 @@
-# Website-Redesign-Project
-A responsive web development project which serves as a refined and improved version of an existing live website. This repository demonstrates enhanced coding practices, better structure, and modern functionality compared to the initial deployment.
+# Personal E-commerce Practice Project
 
-## Features
+A responsive web development project built to demonstrate core front-end and back-end skills. This project showcases a custom-built website with a product catalog and pricing system, focusing on clean code and professional deployment.
 
-*   **Responsive Design:** Implemented a mobile-first approach ensuring functionality across various screen sizes (using CSS Media Queries and Flexbox/Grid).
-*   **Modular PHP:** Utilized `header.php` and `footer.php` for better code organization and maintainability.
-*   **E-commerce Functionality:** Developed a product listing/pricelist and shopping cart simulation to practice basic database querying and PHP logic.
-*   **Version Control:** Project managed using Git and hosted publicly on GitHub.
-*   
-*   ## Technologies Used
+## Key Features
+*   **Responsive Design:** Fully optimized for mobile, tablet, and desktop views using CSS Media Queries.
+*   **Modular PHP Architecture:** Implemented server-side includes (`header.php` and `footer.php`) for efficient code management.
+*   **Dynamic Functionality:** Custom product listing and pricing simulation using PHP and MySQL.
+*   **Version Control:** Managed and documented using Git/GitHub.
 
-*   HTML5
-*   CSS3
-*   JavaScript (Vanilla JS fundamentals)
-*   PHP (Fundamentals, including database interaction)
-*   MySQL/MariaDB
-*   
-*   ## Live Demo
+## Technologies Used
+*   **Front-End:** HTML5, CSS3, JavaScript (Vanilla JS).
+*   **Back-End:** PHP (8.x fundamentals).
+*   **Database:** MySQL / MariaDB.
+*   **Deployment:** Managed via professional web hosting and custom domain setup.
 
-You can view the live, hosted version of this website here:
-[**https://www.timbox-nenagraf.rs**](https://www.timbox-nenagraf.rs)
+## Live Demo
+You can view the live, hosted version of this project here:
+[**http://www.timbox-nenagraf.rs**](http://www.timbox-nenagraf.rs)
+*(Ovde obavezno zameni link tvojim pravim sajtom)*
 
-## Installation
-
-1. Clone the repository: `git clone github.com`
-2. Ensure you have a local PHP environment and MySQL database set up.
-3. Place the files in your web server's root directory (`htdocs` or `www`).
-4. Access the site via your browser at `http://localhost/` or the corresponding project URL.
+## Contact
+**Nesha-tod**
+[GitHub Profile](github.com)
