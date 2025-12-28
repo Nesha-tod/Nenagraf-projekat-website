@@ -1,5 +1,4 @@
-<?php
-// PHP kod za proveru trenutne stranice
+za proveru trenutne stranice
 // basename(__FILE__) vraća samo ime trenutnog fajla (npr. 'header.php' ili 'index.php')
 $current_page = basename($_SERVER['PHP_SELF']); 
 ?>
