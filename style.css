@@ -170,7 +170,7 @@
     
     .hero-slider {
         position: relative;
-        height: 400px;
+        height: 500px;
         width: 100%;
         overflow: hidden;
         background: white;
@@ -347,8 +347,8 @@ html { scroll-behavior: smooth; }
 
 .slideshow {
     position: relative;
-    width: 250px;
-    height: 200px;
+    width: 200px;
+    height: 150px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -357,7 +357,7 @@ html { scroll-behavior: smooth; }
 .slideshow img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     position: absolute;
     top: 0;
     left: 0;
@@ -375,7 +375,7 @@ html { scroll-behavior: smooth; }
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-   padding: 5px 5px;
+   padding: 5px;
     cursor: pointer;
     border-radius: 50%;
     z-index: 10;
@@ -401,6 +401,14 @@ html { scroll-behavior: smooth; }
     font-size: 32px;
     margin-top: 40px;
     margin-bottom: 20px;
+}
+.usluge h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: normal;
+    color: #333;
 }
 .usluga {
     display: grid;

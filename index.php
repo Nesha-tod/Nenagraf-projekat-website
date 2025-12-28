@@ -69,6 +69,8 @@ require 'header.php';
     <section class="usluge" id="proizvodi">
         <h2>Naše usluge</h2>
 
+        <h3>Izrada ambalaže po meri za različite industrije</h3>
+
         <div class="usluga">
 
         <div class="grid-item">

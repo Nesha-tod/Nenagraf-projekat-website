@@ -20,7 +20,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
             <div class="logo"><a href="index.php"><img src="slike/file.svg" alt="Logotip firme"></a></div>
             <div class="naziv_firme">
                 <h1>Timbox - Nenagraf</h1>
-                <p>Izrada ambalaže i reklamnog materijal</p>
+                <p>Izrada ambalaže i reklamnog materijala</p>
             </div>
             </div>
         <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
