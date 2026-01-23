@@ -24,6 +24,11 @@
         z-index: 1000;
     }
 
+    nav ul li a.current {
+    color: #fff; /* Ili neka druga boja koja označava aktivnu stranicu */
+    font-weight: bold;
+}
+
     /* Zaglavlje */
 
     .brand {
@@ -306,12 +311,17 @@ html { scroll-behavior: smooth; }
     padding: 20px 20px;
     text-align: center;
     background-color: #f9f9f9;
-    max-width: 100%;
+    max-width: 90%;
     border-radius: 10px;
     border:rgba(0, 0, 0, 0.1) solid 1px;
     margin: 20px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 20px;
+}
+.o-nama p {
+    margin: auto;
+    color: #333;
+    line-height: 1.6;
 }
 
 .cta-saznaj-vise {
@@ -410,6 +420,31 @@ html { scroll-behavior: smooth; }
     font-weight: normal;
     color: #333;
 }
+.usluge p {
+    text-align: center;
+    font-size: 19px;
+    margin: auto;
+    max-width: 800px;
+    font-weight: normal;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+.opcije {
+    font-size: 16px;
+    color: #777;
+    
+    margin-bottom: 40px;
+    
+}
+
+.crta {
+    width: 400px;
+    height: 2px;
+    background-color: #e65c00;
+    margin: 20px auto 40px auto;
+}
+
 .usluga {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* two columns */
@@ -464,3 +499,101 @@ html { scroll-behavior: smooth; }
     }
 }
 
+/* STRANICA O NAMA */
+
+.o-nama-hero {
+    background-image: url("slike/slika26_set_kutija_sushi_uzdignute.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    position: relative;
+}
+
+.o-nama-overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Uklonjen transform jer nam više ne treba centriranje tačke, već širenje */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.5); /* Poluprovidna crna preko celog ekrana */
+    z-index: 10;
+    
+    /* Ako želite da tekst unutar overlay-a ostane u centru: */
+    
+    text-align: center;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.o-nama-overlay-text h1 {
+    font-size: 48px;
+    margin: 0 20px;
+}
+.o-nama-overlay-text h2 {
+    font-size: 24px;
+    margin: 10px 20px 0 20px;
+    font-weight: normal;
+}
+.o-nama-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    max-width: 1200px;  
+    margin: 40px auto;
+    padding: 0 20px;
+}
+.o-nama-grid {
+    background: #f9f9f9;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    line-height: 1.6;   
+    margin-bottom: 20px;
+}
+.o-nama-grid h2 {
+    padding-top: 5px;
+    font-size: 32px;
+}  
+
+.o-nama-grid p {
+    font-size: 18px;
+    color: #555;
+    margin-top: 15px;
+}
+
+.o-nama-grid img {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    
+    object-fit: contain;
+}
+
+.o-nama-vrednosti {
+    background-color: #f9f9f9;
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+    padding: 20px 15px 0 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.o-nama-vrednosti h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.o-nama-vrednosti p {
+    font-size: 17px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}

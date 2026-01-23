@@ -1,4 +1,6 @@
 <?php
+$naslov_stranice = "Timbox - Nenagraf | Ambalaža i reklamni materijal";
+$opis_stranice = "Timbox - Nenagraf je specijalizovana radionica za izradu svih vrsta ambalaže i reklamnog materijala. Nudimo kutije za ugostiteljstvo, slatki program, luksuzne poklon kutije i reklamne materijale.";
 require 'header.php';
 ?>
 
@@ -69,7 +71,10 @@ require 'header.php';
     <section class="usluge" id="proizvodi">
         <h2>Naše usluge</h2>
 
-        <h3>Izrada ambalaže po meri za različite industrije</h3>
+        <h3>Izrada ambalaže po meri</h3>
+        <p>Projektujemo i proizvodimo ambalažu prilagođenu proizvodima i brendu — od ekonomičnih jednobojnih rešenja do štampanih i luksuznih pakovanja. Nudimo izbor materijala, završnih obrada i konstrukcija, savete za zaštitu proizvoda i mogućnost izrade malih serija ili većih tiraža.</p>
+        <p class="opcije">Kliknite ispod na pojedinačne usluge za konkretne primere i opcije.</p>
+        <div class="crta"></div>
 
         <div class="usluga">
 
