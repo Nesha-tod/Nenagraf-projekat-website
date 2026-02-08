@@ -17,7 +17,7 @@ A responsive web development project built to demonstrate core front-end and bac
 ## Live Demo
 You can view the live, hosted version of this project here:
 [**http://www.timbox-nenagraf.rs**](http://www.timbox-nenagraf.rs)
-*(Ovde obavezno zameni link tvojim pravim sajtom)*
+
 
 ## Contact
 **Nesha-tod**
